@@ -383,13 +383,6 @@ em { font-style: italic; }
 .logos__logo--img[src*="zstick"]        { height: 34px; }
 .logos__logo--img[src*="caddy"]         { height: 44px; }
 .logos__track--rtl .logos__logo--img { opacity: 0.92; }
-/* Extracted PNGs have opaque white backgrounds — use multiply instead of brightness(0) */
-.logos__logo--img[src*="beautydaily"],
-.logos__logo--img[src*="umi"],
-.logos__logo--img[src*="zstick"] {
-  filter: none;
-  mix-blend-mode: multiply;
-}
 .logos__logo:hover { opacity: 1; }
 @keyframes logosScroll {
   from { transform: translate3d(0, 0, 0); }

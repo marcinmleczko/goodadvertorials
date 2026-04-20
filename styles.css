@@ -403,19 +403,21 @@ em { font-style: italic; }
   .logos__track--ltr { animation-duration: 28s; }
   .logos__track--rtl { animation-duration: 24s; }
   /* Cap oversized logos on mobile so both rows fit in the first viewport */
-  .logos__logo--img[src*="HDR"]           { height: 32px; }
-  .logos__logo--img[src*="beautydaily"]   { height: 36px; }
-  .logos__logo--img[src*="forbes_health"] { height: 30px; }
-  .logos__logo--img[src*="brithsdaily"]   { height: 30px; }
-  .logos__logo--img[src*="longevity"]     { height: 24px; }
-  .logos__logo--img[src*="surmer"]        { height: 18px; }
-  .logos__logo--img[src*="arq8"]          { height: 18px; }
-  .logos__logo--img[src*="Audien"]        { height: 18px; }
-  .logos__logo--img[src*="Coffydoor"]     { height: 18px; }
-  .logos__logo--img[src*="header-logo"]   { height: 20px; }
-  .logos__logo--img[src*="umi"]           { height: 24px; }
-  .logos__logo--img[src*="zstick"]        { height: 26px; }
-  .logos__logo--img[src*="caddy"]         { height: 32px; }
+  /* max-height + !important locks size in Safari where intrinsic SVG dims can override */
+  .logos__logo--img                       { max-height: 36px; max-width: 140px; }
+  .logos__logo--img[src*="HDR"]           { height: 32px !important; max-height: 32px; }
+  .logos__logo--img[src*="beautydaily"]   { height: 32px !important; max-height: 32px; }
+  .logos__logo--img[src*="forbes_health"] { height: 28px !important; max-height: 28px; }
+  .logos__logo--img[src*="brithsdaily"]   { height: 28px !important; max-height: 28px; }
+  .logos__logo--img[src*="longevity"]     { height: 22px !important; max-height: 22px; }
+  .logos__logo--img[src*="surmer"]        { height: 18px !important; max-height: 18px; }
+  .logos__logo--img[src*="arq8"]          { height: 18px !important; max-height: 18px; }
+  .logos__logo--img[src*="Audien"]        { height: 18px !important; max-height: 18px; }
+  .logos__logo--img[src*="Coffydoor"]     { height: 18px !important; max-height: 18px; }
+  .logos__logo--img[src*="header-logo"]   { height: 18px !important; max-height: 18px; }
+  .logos__logo--img[src*="umi"]           { height: 22px !important; max-height: 22px; }
+  .logos__logo--img[src*="zstick"]        { height: 24px !important; max-height: 24px; }
+  .logos__logo--img[src*="caddy"]         { height: 28px !important; max-height: 28px; }
 }
 
 /* ---------- THESIS ---------- */
